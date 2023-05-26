@@ -1,7 +1,7 @@
 import gql from 'graphql-tag';
 
 export const registerData = gql`
-    mutation MyMutation($input: Object!) {
+    mutation MyMutation($input: UserInput!) {
       createUsers(input: $input) {
         id
         email
